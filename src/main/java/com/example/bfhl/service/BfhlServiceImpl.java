@@ -63,9 +63,9 @@ public class BfhlServiceImpl implements BfhlService {
             }
 
             response.setIs_success(true);
-            response.setUser_id("sarthak_sharma_26052026");
-            response.setEmail("sarthak@example.com");
-            response.setRoll_number("ABCD123");
+            response.setUser_id("sarthak_gupta_06122005");
+            response.setEmail("sarthakgupta230727@acropolis.in");
+            response.setRoll_number("0827AL231114");
             response.setEven_numbers(evenNumbers);
             response.setOdd_numbers(oddNumbers);
             response.setAlphabets(alphabets);
