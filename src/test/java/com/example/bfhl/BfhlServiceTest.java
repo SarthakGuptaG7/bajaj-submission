@@ -27,9 +27,10 @@ public class BfhlServiceTest {
         assertEquals(Arrays.asList("A", "B"), response.getAlphabets());
         assertEquals(Arrays.asList("$"), response.getSpecial_characters());
         
-        // reversed: $, 2, b, 1, a
-        // joined: $2b1a
-        // alternating: $2B1A
-        assertEquals("$2B1A", response.getConcat_string());
+        // alphabets: a, b
+        // reversed: b, a
+        // joined: ba
+        // alternating: Ba
+        assertEquals("Ba", response.getConcat_string());
     }
 }

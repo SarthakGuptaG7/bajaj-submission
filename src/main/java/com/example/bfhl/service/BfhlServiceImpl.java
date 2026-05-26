@@ -43,10 +43,15 @@ public class BfhlServiceImpl implements BfhlService {
                 }
             }
 
-            // Generate concat_string: reverse order alternating caps
-            List<String> reversedData = new ArrayList<>(data);
-            Collections.reverse(reversedData);
-            String joined = String.join("", reversedData);
+            // Generate concat_string: reverse alphabetical characters only, alternating caps
+            List<String> alphabetsOnly = new ArrayList<>();
+            for (String item : data) {
+                if (isAlphabet(item)) {
+                    alphabetsOnly.add(item);
+                }
+            }
+            Collections.reverse(alphabetsOnly);
+            String joined = String.join("", alphabetsOnly);
             StringBuilder alternatingCaps = new StringBuilder();
             for (int i = 0; i < joined.length(); i++) {
                 char c = joined.charAt(i);
